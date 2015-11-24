@@ -12,7 +12,7 @@
 
     <groupId>ru.finnetrolle.tools</groupId>
     <artifactId>caching-container</artifactId>
-    <version>0.1</version>
+    <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
