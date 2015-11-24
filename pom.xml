@@ -8,9 +8,9 @@
         <version>7</version>
     </parent>
 
-    <groupId>ru.finnetrolle.tools</groupId>
+    <groupId>ru.finnetrolle</groupId>
     <artifactId>caching-container</artifactId>
-    <version>0.1.4-SNAPSHOT</version>
+    <version>0.1.4</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
