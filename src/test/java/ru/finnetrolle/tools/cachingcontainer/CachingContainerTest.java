@@ -2,6 +2,7 @@ package ru.finnetrolle.tools.cachingcontainer;
 
 import org.junit.Test;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
@@ -26,6 +27,31 @@ public class CachingContainerTest {
     public void testCheckedValue() throws Exception {
         CachingContainer<String> container = CachingContainer.build(TTL);
         container.getChecked(() -> {throw new Exception();});
+    }
+
+    @Test
+    public void testInvalidate() {
+        CachingContainer<String> container = CachingContainer.build(TTL);
+        assertEquals("Hello", container.get(() -> "Hello"));
+        assertEquals("Hello", container.get(() -> "World"));
+        container.invalidate();
+        assertEquals("World", container.get(() -> "World"));
+    }
+
+    @Test(expected = Exception.class)
+    public void testInvalidateChecked() throws Exception {
+        CachingContainer<String> container = CachingContainer.build(TTL);
+        assertEquals("Hello", container.get(() -> "Hello"));
+        container.invalidateChecked(() -> {throw new Exception();});
+    }
+
+    @Test
+    public void testInvalidateEager() throws Exception {
+        CachingContainer<String> container = CachingContainer.build(TTL);
+        assertEquals("Hello", container.get(() -> "Hello"));
+        assertEquals("Hello", container.get(() -> "World"));
+        container.invalidate(() -> "Earth");
+        assertEquals("Earth", container.get(() -> "Spoil"));
     }
 
 

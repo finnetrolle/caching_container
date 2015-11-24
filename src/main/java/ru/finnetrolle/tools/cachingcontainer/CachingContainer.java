@@ -92,4 +92,30 @@ public class CachingContainer<T> {
         return (isInitialized()) ? System.currentTimeMillis() - livingTime : 0L;
     }
 
+    /**
+     * Invalidates cache to lazy-loading
+     */
+    public void invalidate() {
+        this.updatedTimstamp = 0L;
+        value = null;
+    }
+
+    /**
+     * Invalidates cache with setting new value
+     * @param supplier new value providing method
+     */
+    public void invalidate(Supplier<T> supplier) {
+        update(supplier.get());
+    }
+
+    /**
+     * Invalidates cache with setting new value
+     * Provider method can throw Exception
+     * @param supplier new value providing method
+     * @throws Exception
+     */
+    public void invalidateChecked(CheckedSupplier<T> supplier) throws Exception {
+        update(supplier.get());
+    }
+
 }

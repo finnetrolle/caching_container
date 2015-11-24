@@ -10,7 +10,7 @@
 
     <groupId>ru.finnetrolle.tools</groupId>
     <artifactId>caching-container</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <version>0.1.3-SNAPSHOT</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
@@ -38,9 +38,9 @@
     </licenses>
 
     <scm>
-        <url>scm:git:https://github.com/finnetrolle/caching_container.git</url>
-        <connection>scm:git:https://github.com/finnetrolle/caching_container.git</connection>
-        <developerConnection>scm:git:https://github.com/finnetrolle/caching_container.git</developerConnection>
+        <url>https://github.com/finnetrolle/caching_container</url>
+        <connection>scm:git:https://github.com/finnetrolle/caching_container</connection>
+        <developerConnection>scm:git:https://github.com/finnetrolle/caching_container</developerConnection>
     </scm>
 
 
@@ -57,22 +57,6 @@
         <outputDirectory>caching_container</outputDirectory>
         <finalName>caching-container</finalName>
         <plugins>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.12</version>
-                <configuration>
-                    <message>Creating site for ${project.version}</message>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>site</phase>
-                    </execution>
-                </executions>
-            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
