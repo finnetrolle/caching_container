@@ -10,7 +10,7 @@
 
     <groupId>ru.finnetrolle</groupId>
     <artifactId>caching-container</artifactId>
-    <version>0.1.5-SNAPSHOT</version>
+    <version>0.1.5</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
