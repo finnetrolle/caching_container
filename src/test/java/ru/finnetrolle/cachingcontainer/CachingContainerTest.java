@@ -1,8 +1,7 @@
-package ru.finnetrolle.tools.cachingcontainer;
+package ru.finnetrolle.cachingcontainer;
 
 import org.junit.Test;
 
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
