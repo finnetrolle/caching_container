@@ -4,14 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.finnetrolle.examples</groupId>
+    <groupId>ru.finnetrolle.tools</groupId>
     <artifactId>caching-container</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
-            <name>Max Syachin aka Finne Trolle</name>
+            <name>Max Syachin</name>
             <email>maxsyachin@gmail.com</email>
+            <id>finnetrolle</id>
+            <url>http://www.finnetrolle.ru</url>
         </developer>
     </developers>
 
@@ -28,7 +30,8 @@
     </licenses>
 
     <scm>
-        <url>http://svn.apache.org/viewvc/maven</url>
+        <url>https://github.com/finnetrolle/caching_container</url>
+        <connection>scm:git:git://github.com/finnetrolle/caching_container.git</connection>
     </scm>
 
 

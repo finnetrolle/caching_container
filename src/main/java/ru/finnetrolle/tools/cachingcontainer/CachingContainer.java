@@ -1,4 +1,4 @@
-package ru.finnetrolle.cachingcontainer;
+package ru.finnetrolle.tools.cachingcontainer;
 
 import java.util.function.Supplier;
 
