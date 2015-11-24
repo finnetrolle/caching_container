@@ -10,7 +10,7 @@
 
     <groupId>ru.finnetrolle.tools</groupId>
     <artifactId>caching-container</artifactId>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>0.1.3</version>
     <packaging>jar</packaging>
     <developers>
         <developer>
@@ -57,11 +57,7 @@
         <outputDirectory>caching_container</outputDirectory>
         <finalName>caching-container</finalName>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.3.2</version>
-            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
