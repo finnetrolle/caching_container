@@ -21,6 +21,10 @@
         </developer>
     </developers>
 
+    <properties>
+        <github.global.server>github</github.global.server>
+    </properties>
+
     <name>Caching container</name>
     <description>Container to cache objects for some time</description>
     <url>http://www.finnetrolle.ru/caching-container/</url>
@@ -34,9 +38,9 @@
     </licenses>
 
     <scm>
-        <url>scm:git:git@github.com:finnetrolle/caching_container.git</url>
-        <connection>scm:git:git@github.com:finnetrolle/caching_container.git</connection>
-        <developerConnection>scm:git:git@github.com:finnetrolle/caching_container.git</developerConnection>
+        <url>scm:git:https://github.com/finnetrolle/caching_container.git</url>
+        <connection>scm:git:https://github.com/finnetrolle/caching_container.git</connection>
+        <developerConnection>scm:git:https://github.com/finnetrolle/caching_container.git</developerConnection>
     </scm>
 
 
@@ -53,6 +57,23 @@
         <outputDirectory>caching_container</outputDirectory>
         <finalName>caching-container</finalName>
         <plugins>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <configuration>
+                    <message>Creating site for ${project.version}</message>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>site</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
