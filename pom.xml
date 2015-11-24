@@ -34,9 +34,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/finnetrolle/caching_container</url>
-        <connection>scm:git:git://github.com/finnetrolle/caching_container.git</connection>
-        <developerConnection>scm:git:git://github.com/finnetrolle/caching_container.git</developerConnection>
+        <url>scm:git:git@github.com:finnetrolle/caching_container.git</url>
+        <connection>scm:git:git@github.com:finnetrolle/caching_container.git</connection>
+        <developerConnection>scm:git:git@github.com:finnetrolle/caching_container.git</developerConnection>
     </scm>
 
 
